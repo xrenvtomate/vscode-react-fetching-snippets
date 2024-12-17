@@ -24,10 +24,10 @@
     ],
     "configuration": {
       "properties": {
-        "reactSnippets.useSemicolons": {
+        "react-fetching-snippets.useSemicolons": {
           "type": "boolean",
           "default": false,
-          "description": "Use functional components."
+          "description": "Use Semicolons"
         }
       }
     }

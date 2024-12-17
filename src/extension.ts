@@ -1,7 +1,7 @@
 import * as vscode from "vscode"
 
 export function activate(context: vscode.ExtensionContext) {
-  const config = vscode.workspace.getConfiguration("reactSnippets")
+  const config = vscode.workspace.getConfiguration("react-fetching-snippets")
   const useSemicolons = config.get<boolean>("useSemicolons") ?? false
 
   let insertBoilerplateCommand = vscode.commands.registerCommand(
@@ -94,7 +94,7 @@ function insertBoilerplate(
       functionName
         ? `${functionName}().then(set${
             stateName.charAt(0).toUpperCase() + stateName.slice(1)
-          })`
+          })${useSemicolons ? ";" : ""}`
         : "//"
     }
   }, [])${useSemicolons ? ";" : ""}
