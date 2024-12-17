@@ -1,5 +1,8 @@
 # react-fetching-snippets extension for VS Code
 
+Выполнил Бауков Дмитрий Владиславович M3104
+
+
 ## Features
 
 Allows to easily paste boilerplate code for common data fetching pattern in React.
